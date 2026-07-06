@@ -27,8 +27,11 @@ spec:
 
       transaction.state.log.replication.factor: 3
 
-      transaction.state.log.min.isr: 2
+      transaction.state.log.min.isr: 1
 
       default.replication.factor: 3
 
-      min.insync.replicas: 2
+      min.insync.replicas: 1
+
+      auto.create.topics.enable: true
+      num.partitions: 20
